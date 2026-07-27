@@ -75,7 +75,9 @@ def read_matrix(rows, cols):
 
 def display_matrix(matrix):
     for row in matrix:
-        print(" ".join(f"{x:3}" for x in row))
+        for value in row:
+            print(value, end="\t")
+        print()
 
 
 def transpose_matrix(matrix):
@@ -100,4 +102,4 @@ cols = int(input("Enter number of columns: "))
 
 matrix = read_matrix(rows, cols)
 
-print(matrix)
+display_matrix(matrix)
