@@ -48,6 +48,9 @@
  
 
 def get_grade(score):
+    if score < 0 or score > 100:
+        return None 
+
     if score >= 80:
         return "A"
     elif score >= 70:
