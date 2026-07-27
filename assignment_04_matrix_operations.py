@@ -60,3 +60,31 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+
+# =============================================================================
+# PROGRAMMING FUNDAMENTALS — Assignment 4
+# =============================================================================
+
+def read_matrix(rows, cols):
+    pass
+
+
+def display_matrix(matrix):
+    pass
+
+
+def transpose_matrix(matrix):
+    pass
+
+
+def add_matrices(matrix1, matrix2):
+    pass
+
+
+def multiply_matrices(matrix1, matrix2):
+    pass
+
+
+print("=" * 45)
+print("      Matrix Operations Program")
+print("=" * 45)
