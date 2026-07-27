@@ -41,7 +41,6 @@
 
 
 def calculate_sum(numbers):
-    def calculate_sum(numbers):
     total = 0
 
     for number in numbers:
@@ -51,15 +50,28 @@ def calculate_sum(numbers):
 
 
 def calculate_average(numbers):
-    pass
+    total = calculate_sum(numbers)
+    return total / len(numbers)
 
 
 def calculate_maximum(numbers):
-    pass
+    largest = numbers[0]
+
+    for number in numbers:
+        if number > largest:
+            largest = number
+
+    return largest
 
 
 def calculate_minimum(numbers):
-    pass
+    smallest = numbers[0]
+
+    for number in numbers:
+        if number < smallest:
+            smallest = number
+
+    return smallest
 
 print("=" * 40)
 print("Welcome to the Array Statistics Calculator")
@@ -77,3 +89,5 @@ else:
         numbers.append(number)
 
     print("Sum:", calculate_sum(numbers))
+
+    
