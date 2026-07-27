@@ -81,7 +81,20 @@ def display_matrix(matrix):
 
 
 def transpose_matrix(matrix):
-    pass
+    rows = len(matrix)
+    cols = len(matrix[0])
+
+    transpose = []
+
+    for j in range(cols):
+        new_row = []
+
+        for i in range(rows):
+            new_row.append(matrix[i][j])
+
+        transpose.append(new_row)
+
+    return transpose
 
 
 def add_matrices(matrix1, matrix2):
@@ -102,4 +115,13 @@ cols = int(input("Enter number of columns: "))
 
 matrix = read_matrix(rows, cols)
 
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
+
+matrix = read_matrix(rows, cols)
+
+print("\nOriginal Matrix:")
 display_matrix(matrix)
+
+print("\nTransposed Matrix:")
+display_matrix(transpose_matrix(matrix))
