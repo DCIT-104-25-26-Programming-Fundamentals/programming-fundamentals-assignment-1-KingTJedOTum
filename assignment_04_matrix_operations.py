@@ -98,7 +98,20 @@ def transpose_matrix(matrix):
 
 
 def add_matrices(matrix1, matrix2):
-    pass
+    rows = len(matrix1)
+    cols = len(matrix1[0])
+
+    result = []
+
+    for i in range(rows):
+        row = []
+
+        for j in range(cols):
+            row.append(matrix1[i][j] + matrix2[i][j])
+
+        result.append(row)
+
+    return result
 
 
 def multiply_matrices(matrix1, matrix2):
@@ -125,3 +138,23 @@ display_matrix(matrix)
 
 print("\nTransposed Matrix:")
 display_matrix(transpose_matrix(matrix))
+
+print("\nPART B - Matrix Addition")
+
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
+
+print("\nEnter Matrix 1")
+matrix1 = read_matrix(rows, cols)
+
+print("\nEnter Matrix 2")
+matrix2 = read_matrix(rows, cols)
+
+print("\nMatrix 1:")
+display_matrix(matrix1)
+
+print("\nMatrix 2:")
+display_matrix(matrix2)
+
+print("\nSum Matrix:")
+display_matrix(add_matrices(matrix1, matrix2))
