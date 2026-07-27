@@ -64,12 +64,19 @@
 # =============================================================================
 # PROGRAMMING FUNDAMENTALS — Assignment 4
 # =============================================================================
+ 
+# =============================================================================
+# PROGRAMMING FUNDAMENTALS — Assignment 4
+# Topic: Multi-dimensional Arrays (2D Lists), Nested Loops, and Functions
+# =============================================================================
 
 def read_matrix(rows, cols):
     matrix = []
+
     for i in range(rows):
         row = list(map(int, input(f"Enter row {i + 1}: ").split()))
         matrix.append(row)
+
     return matrix
 
 
@@ -142,11 +149,11 @@ print("=" * 45)
 print("      Matrix Operations Program")
 print("=" * 45)
 
+# =====================================================
+# PART A - Matrix Transpose
+# =====================================================
 
-rows = int(input("Enter number of rows: "))
-cols = int(input("Enter number of columns: "))
-
-matrix = read_matrix(rows, cols)
+print("\nPART A - Matrix Transpose")
 
 rows = int(input("Enter number of rows: "))
 cols = int(input("Enter number of columns: "))
@@ -158,6 +165,11 @@ display_matrix(matrix)
 
 print("\nTransposed Matrix:")
 display_matrix(transpose_matrix(matrix))
+
+
+# =====================================================
+# PART B - Matrix Addition
+# =====================================================
 
 print("\nPART B - Matrix Addition")
 
@@ -178,12 +190,18 @@ display_matrix(matrix2)
 
 print("\nSum Matrix:")
 display_matrix(add_matrices(matrix1, matrix2))
+
+
+# =====================================================
+# PART C - Matrix Multiplication
+# =====================================================
+
 print("\nPART C - Matrix Multiplication")
 
 rows1 = int(input("Enter rows for Matrix A: "))
 cols1 = int(input("Enter columns for Matrix A: "))
 
-print("Enter Matrix A")
+print("\nEnter Matrix A")
 matrix1 = read_matrix(rows1, cols1)
 
 rows2 = int(input("Enter rows for Matrix B: "))
@@ -192,7 +210,7 @@ cols2 = int(input("Enter columns for Matrix B: "))
 if cols1 != rows2:
     print("Matrices cannot be multiplied.")
 else:
-    print("Enter Matrix B")
+    print("\nEnter Matrix B")
     matrix2 = read_matrix(rows2, cols2)
 
     print("\nProduct Matrix:")
