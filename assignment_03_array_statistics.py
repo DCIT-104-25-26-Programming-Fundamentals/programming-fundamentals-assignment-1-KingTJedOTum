@@ -54,3 +54,20 @@ def calculate_maximum(numbers):
 
 def calculate_minimum(numbers):
     pass
+
+print("=" * 40)
+print("Welcome to the Array Statistics Calculator")
+print("=" * 40)
+
+count = int(input("How many numbers? "))
+
+if count <= 0:
+    print("Error: Number of values must be positive.")
+else:
+    numbers = []
+
+    for i in range(count):
+        number = int(input(f"Enter number {i + 1}: "))
+        numbers.append(number)
+
+    print(numbers)
