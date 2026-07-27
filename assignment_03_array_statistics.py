@@ -41,7 +41,13 @@
 
 
 def calculate_sum(numbers):
-    pass
+    def calculate_sum(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total
 
 
 def calculate_average(numbers):
@@ -70,4 +76,4 @@ else:
         number = int(input(f"Enter number {i + 1}: "))
         numbers.append(number)
 
-    print(numbers)
+    print("Sum:", calculate_sum(numbers))
