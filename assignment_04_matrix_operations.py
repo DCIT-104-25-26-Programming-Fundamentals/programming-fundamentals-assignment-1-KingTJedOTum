@@ -115,7 +115,27 @@ def add_matrices(matrix1, matrix2):
 
 
 def multiply_matrices(matrix1, matrix2):
-    pass
+    rows1 = len(matrix1)
+    cols1 = len(matrix1[0])
+
+    cols2 = len(matrix2[0])
+
+    result = []
+
+    for i in range(rows1):
+        row = []
+
+        for j in range(cols2):
+            total = 0
+
+            for k in range(cols1):
+                total += matrix1[i][k] * matrix2[k][j]
+
+            row.append(total)
+
+        result.append(row)
+
+    return result
 
 
 print("=" * 45)
@@ -158,3 +178,22 @@ display_matrix(matrix2)
 
 print("\nSum Matrix:")
 display_matrix(add_matrices(matrix1, matrix2))
+print("\nPART C - Matrix Multiplication")
+
+rows1 = int(input("Enter rows for Matrix A: "))
+cols1 = int(input("Enter columns for Matrix A: "))
+
+print("Enter Matrix A")
+matrix1 = read_matrix(rows1, cols1)
+
+rows2 = int(input("Enter rows for Matrix B: "))
+cols2 = int(input("Enter columns for Matrix B: "))
+
+if cols1 != rows2:
+    print("Matrices cannot be multiplied.")
+else:
+    print("Enter Matrix B")
+    matrix2 = read_matrix(rows2, cols2)
+
+    print("\nProduct Matrix:")
+    display_matrix(multiply_matrices(matrix1, matrix2))
