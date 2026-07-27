@@ -66,8 +66,15 @@ def print_fibonacci(n):
 
 
 def is_fibonacci(number):
-    pass
+    first = 0
+    second = 1
 
+    while first < number:
+        next_number = first + second
+        first = second
+        second = next_number
+
+    return first == number
 
 print("=" * 45)
 print("     Fibonacci Sequence Generator")
@@ -81,3 +88,11 @@ if n <= 0:
     print("Error: Number of terms must be positive.")
 else:
     print_fibonacci(n)
+
+print("\nPART B")
+number = int(input("Enter a number to check: "))
+if is_fibonacci(number):
+    print(f"{number} is a Fibonacci number.")
+else:
+    print(f"{number} is NOT a Fibonacci number.")
+    
