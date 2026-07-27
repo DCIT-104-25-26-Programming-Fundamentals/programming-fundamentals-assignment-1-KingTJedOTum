@@ -50,8 +50,34 @@
 # =============================================================================
 
 def print_fibonacci(n):
-    pass
+    first = 0
+    second = 1
+
+    print("Fibonacci sequence:", end=" ")
+
+    for i in range(n):
+        print(first, end=" ")
+
+        next_number = first + second
+        first = second
+        second = next_number
+
+    print()
 
 
 def is_fibonacci(number):
     pass
+
+
+print("=" * 45)
+print("     Fibonacci Sequence Generator")
+print("=" * 45)
+
+print("\nPART A")
+
+n = int(input("How many terms? "))
+
+if n <= 0:
+    print("Error: Number of terms must be positive.")
+else:
+    print_fibonacci(n)
