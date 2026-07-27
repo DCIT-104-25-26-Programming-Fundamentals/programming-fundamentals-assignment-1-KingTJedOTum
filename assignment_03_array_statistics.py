@@ -39,3 +39,18 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+
+def calculate_sum(numbers):
+    pass
+
+
+def calculate_average(numbers):
+    pass
+
+
+def calculate_maximum(numbers):
+    pass
+
+
+def calculate_minimum(numbers):
+    pass
