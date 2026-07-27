@@ -66,11 +66,16 @@
 # =============================================================================
 
 def read_matrix(rows, cols):
-    pass
+    matrix = []
+    for i in range(rows):
+        row = list(map(int, input(f"Enter row {i + 1}: ").split()))
+        matrix.append(row)
+    return matrix
 
 
 def display_matrix(matrix):
-    pass
+    for row in matrix:
+        print(" ".join(f"{x:3}" for x in row))
 
 
 def transpose_matrix(matrix):
@@ -88,3 +93,11 @@ def multiply_matrices(matrix1, matrix2):
 print("=" * 45)
 print("      Matrix Operations Program")
 print("=" * 45)
+
+
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
+
+matrix = read_matrix(rows, cols)
+
+print(matrix)
