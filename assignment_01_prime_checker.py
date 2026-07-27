@@ -35,3 +35,35 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+
+def is_prime(n):
+    if n < 2:
+        return False
+    
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    else:
+         return True
+    
+
+
+print("=" * 40)
+print("   Welcome to the Prime Number Checker!")
+print("=" * 40)
+
+try:
+    number = float(input("Enter a number: "))
+    
+    # Check if it's a whole number
+    if number != int(number):
+        print("Please enter a whole number, not a decimal.")
+    else:
+        number = int(number)
+        if is_prime(number):
+            print(f"{number} is a prime number.")
+        else:
+            print(f"{number} is NOT a prime number.")
+
+except ValueError:
+    print("Invalid input. Please enter a number.")
