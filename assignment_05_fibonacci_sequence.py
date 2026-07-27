@@ -49,3 +49,9 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+def print_fibonacci(n):
+    pass
+
+
+def is_fibonacci(number):
+    pass
