@@ -68,3 +68,24 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+def add(a, b):
+    pass
+
+def subtract(a, b):
+    pass
+
+def multiply(a, b):
+    pass
+
+def divide(a, b):
+    pass
+
+def modulus(a, b):
+    pass
+
+def exponentiate(a, b):
+    pass
+
+def main():
+    pass
+
