@@ -91,7 +91,28 @@
 # =============================================================================
 
 def add_student(students):
-    pass
+    name = input("Student name: ")
+    student_id = input("Student ID: ")
+
+    
+    number_of_scores = int(input("How many scores? "))
+     
+    scores = []
+    for i in range(number_of_scores):
+         
+        score = float(input(f"Enter score {i + 1}: "))
+         
+        scores.append(score)
+
+    student = {
+        "name": name,
+        "id": student_id,
+        "scores": scores,
+    }
+    students.append(student)
+    print(f'Student "{name}" added successfully.')
+
+
 
 def display_students(students):
     pass
@@ -99,7 +120,7 @@ def display_students(students):
 def calculate_average(students):
     pass
 
-def main():
+def main(): 
     pass 
 
 
