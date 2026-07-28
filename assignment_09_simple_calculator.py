@@ -88,5 +88,55 @@ def exponentiate(a, b):
     a ** b
 
 def main():
-    pass
+
+    while True:
+        print("=" * 30)
+        print(" SIMPLE CALCULATOR")
+        print("=" * 30)
+        print("1. Addition")
+        print("2. Subtraction")
+        print("3. Multiplication")
+        print("4. Division")
+        print("5. Modulus")
+        print("6. Exponentiation")
+        print("7. Quit")
+        
+        choice = input("Select an operation (1-7): ")
+        
+        if choice == '7':
+            print("Goodbye!")
+            break
+        
+        if choice not in {'1', '2', '3', '4', '5', '6'}:
+            print("Invalid choice. Please select a number between 1 and 7.")
+            continue
+        
+         
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        
+        
+        if choice == '1':
+            result = add(num1, num2)
+            print(f"Result: {num1} + {num2} = {result}")
+        elif choice == '2':
+            result = subtract(num1, num2)
+            print(f"Result: {num1} - {num2} = {result}")
+        elif choice == '3':
+            result = multiply(num1, num2)
+            print(f"Result: {num1} * {num2} = {result}")
+        elif choice == '4':
+            if num2 == 0:
+                print("Error: Cannot divide by zero.")
+                continue
+            result = divide(num1, num2)
+            print(f"Result: {num1} / {num2} = {result:.2f}")
+        elif choice == '5':
+            result = modulus(num1, num2)
+            print(f"Result: {num1} % {num2} = {result}")
+        elif choice == '6':
+            result = exponentiate(num1, num2)
+            print(f"Result: {num1} ** {num2} = {result}")
+
+main()
 
