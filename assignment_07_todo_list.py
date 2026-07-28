@@ -79,3 +79,22 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+
+def add_student(student):
+    pass
+
+def view_students(student):
+    pass
+
+def delete_student(student):
+    pass
+
+def main():
+    pass
+
+print("=" * 45)
+print("      To-Do List Application System")
+print("=" * 45)
+
+
+     
