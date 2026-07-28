@@ -86,7 +86,12 @@ def add_task(task):
 print(f'Task added: "{task}"')
 
 def view_task(task ):
-    pass
+    if len(task) == 0:
+        print("Your task list is empty.")
+    else:
+        print("Your Tasks:")
+        for i, t in enumerate(task, start=1):
+            print(f" {i}. {t}")
 
 def delete_task(task):
     pass
