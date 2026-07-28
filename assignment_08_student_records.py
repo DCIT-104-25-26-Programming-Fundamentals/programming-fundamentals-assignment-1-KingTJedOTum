@@ -90,3 +90,19 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+def add_student(students):
+    pass
+
+def display_students(students):
+    pass
+
+def calculate_average(students):
+    pass
+
+def main():
+    pass 
+
+
+print("=" * 40)
+print(" WELCOME TO THE STUDENT RECORD SYSTEM MENU")
+print("=" * 40)
