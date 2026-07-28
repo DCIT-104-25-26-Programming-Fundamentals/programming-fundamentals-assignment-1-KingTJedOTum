@@ -55,3 +55,19 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+# =============================================================================
+# PROGRAMMING FUNDAMENTALS — Assignment 6
+# =============================================================================
+
+
+def multiplication_table(number):
+    pass
+
+
+def multiplication_tables_up_to(n):
+    pass
+
+
+print("=" * 45)
+print("     Multiplication Table Generator")
+print("=" * 45)
