@@ -127,7 +127,13 @@ def display_students(students):
     print("-" * 50)
 
 def calculate_average(students):
-    pass
+    student_id = input("Enter student ID: ")
+    for student in students:
+        if student["id"] == student_id:
+            average = sum(student["scores"]) / len(student["scores"])
+            print(f"{student['name']}'s average score: {average:.2f}")
+            return
+    print("Student ID not found.")
 
 def main(): 
     pass 
