@@ -135,10 +135,31 @@ def calculate_average(students):
             return
     print("Student ID not found.")
 
-def main(): 
-    pass 
+def main():
+    students = []
+
+    while True:
+        print("\n============================")
+        print("   STUDENT RECORD SYSTEM MENU")
+        print("============================")
+        print("1. Add student")
+        print("2. Display all students")
+        print("3. Calculate average score")
+        print("4. Quit")
+        choice = input("Enter your choice (1-4): ")
+
+        if choice == "1":
+            add_student(students)
+        elif choice == "2":
+            display_students(students)
+        elif choice == "3":
+            calculate_average(students)
+        elif choice == "4":
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please enter a number between 1 and 4.")
+     
+main()
 
 
-print("=" * 40)
-print(" WELCOME TO THE STUDENT RECORD SYSTEM MENU")
-print("=" * 40)
