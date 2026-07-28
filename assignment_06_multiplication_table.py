@@ -61,7 +61,10 @@
 
 
 def multiplication_table(number):
-    pass
+    print(f"\nMultiplication Table for {number}:")
+
+    for i in range(1, 13):
+        print(f"{number} x {i} = {number * i}")
 
 
 def multiplication_tables_up_to(n):
@@ -71,3 +74,12 @@ def multiplication_tables_up_to(n):
 print("=" * 45)
 print("     Multiplication Table Generator")
 print("=" * 45)
+
+print("\nPART A - Single Table")
+
+number = int(input("Enter a number: "))
+
+if number <= 0:
+    print("Error: Number must be positive.")
+else:
+    multiplication_table(number)
