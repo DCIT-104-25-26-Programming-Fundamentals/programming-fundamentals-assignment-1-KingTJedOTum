@@ -69,22 +69,23 @@
 # =============================================================================
 
 def add(a, b):
-    pass
+    a + b
 
 def subtract(a, b):
-    pass
+    a-b
+
 
 def multiply(a, b):
-    pass
+    a* b
 
 def divide(a, b):
-    pass
+    a/b
 
 def modulus(a, b):
-    pass
+    a % b
 
 def exponentiate(a, b):
-    pass
+    a ** b
 
 def main():
     pass
