@@ -80,13 +80,15 @@
 # =============================================================================
 
 
-def add_student(student):
+def add_task(task):
+    task = input("Enter task: ")
+    task.append(task)
+print(f'Task added: "{task}"')
+
+def view_task(task ):
     pass
 
-def view_students(student):
-    pass
-
-def delete_student(student):
+def delete_task(task):
     pass
 
 def main():
@@ -95,6 +97,7 @@ def main():
 print("=" * 45)
 print("      To-Do List Application System")
 print("=" * 45)
+
 
 
      
