@@ -115,7 +115,16 @@ def add_student(students):
 
 
 def display_students(students):
-    pass
+    if len(students) == 0:
+        print("No students have been added yet")
+        return
+    print("-" * 50)
+    print("Name\t\tID\t\tScores\t\tAverage")
+    print("-" * 50)
+    for student in students:
+        average = sum(student["scores"]) / len(student["scores"])
+        print(f"{student['name']}\t\t{student['id']}\t\t{', '.join(map(str, student['scores']))}\t\t{average:.2f}")
+    print("-" * 50)
 
 def calculate_average(students):
     pass
